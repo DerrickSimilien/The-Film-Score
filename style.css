@@ -1,0 +1,101 @@
+.body, html {
+    max-width: 100vw;
+    overflow-x: hidden;
+    background-color: #fff;
+}
+
+.md-body-1, .md-body-2, .body {
+    font-size: 14px;
+    letter-spacing: .01em;
+}
+
+.md-body-1, body {
+    font-weight: 400;
+    line-height: 20px;
+}
+
+body {
+    min-height: 100%;
+    margin: 0;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.align-center {
+    align-items: center !important;
+}
+
+.justify-between {
+    justify-content: space-between !important;
+}
+
+.content-wrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navbar, .Logo {
+height: 40px;
+width: 150px;
+}
+
+.navbar, .links {
+    position: relative;
+}
+
+.navbar, .links {
+    display: flex;
+    width: 100%;
+    max-width: 430px;
+}
+
+.navbar, .Home-Active {
+    color: #6030b1 !important;
+}
+
+.navbar, a {
+    text-decoration: underline;
+}
+
+.content-wrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ContactButton {
+    display: flex;
+    cursor: pointer;
+    max-height: 48px;
+    min-height: 48px;
+    padding: 12px 40px;
+    align-items: center;
+    border: 2px #523eff;
+    border-radius: 50px;
+    background-color: #6030b1;
+    color: #fff !important;
+    font-size: 13px;
+    font-weight: 700px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all .35s ease;
+}
+
+
+@media screen and (max-height: 1200px) {
+    .navbar[data-v-2a11e7ca] {
+        height: 100px;
+    }
+}
