@@ -1,8 +1,9 @@
-.body, html {
+/* .body, html {
     max-width: 100vw;
     overflow-x: hidden;
     background-color: #fff;
 }
+
 
 .md-body-1, .md-body-2, .body {
     font-size: 14px;
@@ -20,12 +21,14 @@ body {
     position: relative;
 }
 
-.navbar {
+.navbar{
     display: flex;
     align-items: center;
     padding: 0 50px;
     font-size: 18px;
     font-weight: 600;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .align-center {
@@ -75,7 +78,7 @@ width: 150px;
     flex-wrap: wrap;
 }
 
-.ContactButton {
+.btn {
     display: flex;
     cursor: pointer;
     max-height: 48px;
@@ -106,16 +109,155 @@ flex: 1;
 }
 
 
+.NavBar__Links {
+    display: flex;
+   justify-content: flex-end;
+} */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.NavBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 50px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.Logo {
+height: 40px;
+width: 150px;
+}
+
+.ContactButton {
+    cursor: pointer;
+    padding: 12px 40px;
+    border: 2px #523eff;
+    border-radius: 50px;
+    background-color: #6030b1;
+    color: #fff !important;
+    font-size: 13px;
+    font-weight: 700px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.NavBar__Links {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.Menu {
+    display: none;
+}
+
+.FirstContainer {
+    z-index: 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 0px 16px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* text-align: center;
+    justify-content: center; */
+}
+
+.Container {
+    transform: none;
+    text-align: center;
+    justify-content: center;
+}
+
+.FirstHeader {
+    max-width: 730px;
+    font-weight: 700;
+    line-height: 1.25;
+    color: #6030b1;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+
+.Header2 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #0a1f44;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0px 0px 40px;
+}
+
+.ChangeColor {
+    color: #6030b1;
+}
+
+.InputSearch {
+    background-color: #fff;
+    border-radius: 20px;
+    border: 1px solid #0a1f44;
+    color: #0a1f44;
+    display: inline-block;
+    height: 70px;
+    line-height: 40px;
+    outline: none;
+    padding: 0 15px;
+    transition: border-color .2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    width: 50%;
+    font-size: 24px;
+    padding-left: 25px;
+}
+
+.Loading {
+    width: 200px;
+    margin-left: 20px;
+    font-size: 40px;
+    color: #fff;
+    border-radius: 20px;
+    transition: all .25s ease;
+    margin: 0px 0px 0px 20px;
+    padding: 1px 6px;
+}
 
 
-@media screen and (max-height: 1200px) {
-    .navbar[data-v-2a11e7ca] {
-        height: 100px;
+.Not-Loading {
+    border: 1px solid #6030b1;
+    background-color: #6030b1;
+    box-shadow: 7px 7px 14px rgba(134, 93 204, .3);
+    cursor: pointer;
+}
+
+.fa-magnifying-glass {
+overflow: visible;
+width: 1em;
+display: inline-block;
+font-size: inherit;
+height: 1em;
+vertical-align: -0.125em;
+}
+
+
+
+
+
+@media (max-width: 750px) {
+    .Menu {
+        display: flex;
     }
 
-    #LandingPage {
-        max-height: none;
+    .NavBar__Links {
+        display: none;
     }
 
 }
+
 
