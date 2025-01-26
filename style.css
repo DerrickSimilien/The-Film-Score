@@ -118,6 +118,7 @@ flex: 1;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    background-color: black;
 }
 
 .NavBar {
@@ -132,8 +133,8 @@ flex: 1;
 }
 
 .Logo {
-height: 40px;
-width: 150px;
+height: 160px;
+width: 170px;
 }
 
 .ContactButton {
@@ -141,12 +142,13 @@ width: 150px;
     padding: 12px 40px;
     border: 2px #523eff;
     border-radius: 50px;
-    background-color: #6030b1;
-    color: #fff !important;
+    background-color: #F5D13D;
+    color: black !important;
     font-size: 13px;
-    font-weight: 700px;
+    font-weight: 900px;
     letter-spacing: 1px;
     text-transform: uppercase;
+    font-style: italic;
 }
 
 .NavBar__Links {
@@ -161,14 +163,20 @@ width: 150px;
 }
 
 .FirstContainer {
-    z-index: 10px;
+    /* z-index: 10px;
     background-color: rgb(255, 255, 255);
     padding: 0px 16px;
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto; */
     /* text-align: center;
     justify-content: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+
 }
 
 .Container {
@@ -181,7 +189,7 @@ width: 150px;
     max-width: 730px;
     font-weight: 700;
     line-height: 1.25;
-    color: #6030b1;
+    color: #F5D13D;
     text-align: center;
     margin-bottom: 30px;
     font-size: 50px;
@@ -191,14 +199,16 @@ width: 150px;
     font-size: 30px;
     font-weight: 700;
     line-height: 1.5;
-    color: #0a1f44;
+    color: #fff;
     text-transform: uppercase;
     text-align: center;
     margin: 0px 0px 40px;
 }
 
 .ChangeColor {
-    color: #6030b1;
+    color: #f5f33d;
+    font-weight: 800;
+    font-style: italic;
 }
 
 .InputSearch {
@@ -212,26 +222,28 @@ width: 150px;
     outline: none;
     padding: 0 15px;
     transition: border-color .2s cubic-bezier(0.645, 0.045, 0.355, 1);
-    width: 50%;
     font-size: 24px;
     padding-left: 25px;
 }
 
 .Loading {
-    width: 200px;
-    margin-left: 20px;
     font-size: 40px;
     color: #fff;
     border-radius: 20px;
     transition: all .25s ease;
     margin: 0px 0px 0px 20px;
-    padding: 1px 6px;
+    padding: 10px 30px;
+}
+
+.Loading:hover {
+    background-color: #F5D13D;
+    cursor: pointer;
 }
 
 
 .Not-Loading {
-    border: 1px solid #6030b1;
-    background-color: #6030b1;
+    border: 1px solid #F5D13D;
+    background-color: #F5D13D;
     box-shadow: 7px 7px 14px rgba(134, 93 204, .3);
     cursor: pointer;
 }
@@ -243,7 +255,21 @@ display: inline-block;
 font-size: inherit;
 height: 1em;
 vertical-align: -0.125em;
+background-color: #F5D13D;
 }
+
+.FilmRoll {
+    margin-top: 30px;
+}
+
+.Home-Active {
+    color:#F5D13D;
+}
+
+.SearchYourFilm {
+    color: #F5D13D;
+}
+
 
 
 
