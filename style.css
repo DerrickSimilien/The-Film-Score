@@ -176,7 +176,11 @@ width: 170px;
     align-items: center;
     justify-content: center;
     margin-top: 20px;
-
+    animation-duration: 1500ms; 
+    transition-duration: 1500ms; 
+    animation-delay: 300ms; 
+    transition-delay: 300ms; 
+    width: 100%;
 }
 
 .Container {
@@ -269,6 +273,15 @@ background-color: #F5D13D;
 .SearchYourFilm {
     color: #F5D13D;
 }
+
+/* .FirstContainer{   
+animation-duration: 1500ms; 
+transition-duration: 1500ms; 
+animation-delay: 300ms; 
+transition-delay: 300ms; 
+width: 100%;
+} */
+
 
 
 
