@@ -309,17 +309,46 @@ background-color: #F5D13D;
    .BrowseMovieInput {
     color: #F5D13D;
     width: 100%;
-    max-width: 800px;
+    max-width: 1200px;
     height: 60px;
     font-size: 20px;
     padding-left: 20px;
     background-color: #fff;
     border-radius: 40px;
+    
    }
 
    .InputWrapper__Browse {
-    align-items: center;
     display: flex;
+    justify-content: center;
+    /* display: inline-block; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 600px;
+    width: 100%;
+   }
+
+   .InputWrapper__Browse i {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #777;
+    cursor: pointer;
+    background-color: #fff;
+   }
+
+   .InputWrapper__Browse input {
+    padding: 10px 40px 10px 15px;
+    border: 1px solid #ccc;
+    font-size: 20px;
+    width: 100%;
+    border-radius: 40px;
+    /* align-items: center;
+    display: flex; */
    }
 
    .Search-Wrapper {
