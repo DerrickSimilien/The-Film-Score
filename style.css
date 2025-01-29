@@ -290,6 +290,8 @@ background-color: #F5D13D;
    .BrowseContainer {
     margin-top: 40px;
     z-index: 2;
+    display: flex;
+    justify-content: center;
    }
 
    .BrowseClickWatch {
@@ -313,6 +315,11 @@ background-color: #F5D13D;
     padding-left: 20px;
     background-color: #fff;
     border-radius: 40px;
+   }
+
+   .InputWrapper__Browse {
+    align-items: center;
+    display: flex;
    }
 
    .Search-Wrapper {
