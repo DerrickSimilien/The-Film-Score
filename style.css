@@ -130,11 +130,18 @@ flex: 1;
     font-size: 18px;
     font-weight: 600;
     margin-top: 30px;
+    position: relative;
+    background-color: transparent;
+    z-index: 2;
 }
 
 .Logo {
 height: 160px;
 width: 170px;
+}
+
+.Logo img {
+    filter: drop-shadow(2px 2px 5px rgba(255, 255, 255, 0.5));
 }
 
 .ContactButton {
@@ -143,12 +150,24 @@ width: 170px;
     border: 2px #523eff;
     border-radius: 50px;
     background-color: #F5D13D;
-    color: black !important;
+    /* color: white !important; */
+    color: black;
     font-size: 13px;
     font-weight: 900px;
     letter-spacing: 1px;
     text-transform: uppercase;
+    /* font-style: italic; */
+    transition: 0.3s ease-in-out;
     font-style: italic;
+    font-weight: bold;
+}
+
+.ContactButton:hover {
+    color: white;
+    background-color: black;
+    box-shadow: 0 0 10px yellow, 0 0 20px gold, 0 0 30px orange;
+    text-shadow: 0 0 10px yellow, 0 0 20px gold;
+    border-color: gold;
 }
 
 .NavBar__Links {
@@ -156,6 +175,23 @@ width: 170px;
     align-items: center;
     justify-content: space-around;
     width: 40%;
+    background: none;
+}
+
+.NavBar__Links a {
+    text-decoration: none;
+    color: #F5D13D;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: color 0.3s ease-in-out;
+    background: none !important;
+}
+
+.NavBar__Links a:hover {
+    color: #F5D13D;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 0, 0.6);
+    transform: scale(1.1);
 }
 
 .Menu {
@@ -295,16 +331,20 @@ background-color: #F5D13D;
    }
 
    .BrowseClickWatch {
-    font-weight: 600;
+    font-weight: bold;
     text-align: center;
-    letter-spacing: .1em;
-    font-size: 45px;
-    max-width: 1000px;
-    margin-bottom: 40px;
+    font-size: 42px;
     color: #fff;
-    display: flex;
-    justify-content: center;
+    text-shadow: 0 0 10px #F5D13D, 0 0 20px #F5D13D, 0 0 15px orange;
+    animation: glowingText 1.5s infinite alternate;
+    margin-top: 40px;
    }
+
+   /* .BrowseClickWatch {
+    position: relative;
+    z-index: 2;
+    margin-top: -50px;
+   } */
 
    .BrowseMovieInput {
     color: #F5D13D;
@@ -315,8 +355,16 @@ background-color: #F5D13D;
     padding-left: 20px;
     background-color: #fff;
     border-radius: 40px;
-    
+   
    }
+
+   /* .search-bar {
+    width: 60%;
+    padding: 10px;
+    border-radius: 25px;
+    border: 2px solid gold;
+    font-size: 20px;
+   } */
 
    .InputWrapper__Browse {
     display: flex;
@@ -328,6 +376,7 @@ background-color: #F5D13D;
     transform: translate(-50%, -50%);
     max-width: 600px;
     width: 100%;
+    margin-top: 40px;
    }
 
    .InputWrapper__Browse i {
@@ -364,8 +413,58 @@ background-color: #F5D13D;
     transition: all .2s ease;
    }
 
+   .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    background-image: url('./assets/red\ curtains.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+    z-index: 0;
+   }
 
+   .body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+   }
 
+   #SearchResults {
+    position: relative;
+    /* padding: 40px 20px; */
+    display: flex;
+    flex-direction: column;
+   }
+ 
+   
+   .glowing-divider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 215, 0, 1) 50%, rgba(255, 255, 0) 100%);
+    box-shadow: 0px 0px 15px rgba(255, 215, 0, 0.8);
+    animation: glowing 2s infinite linear;
+   }
+
+   .Filter {
+    padding: 0 20px;
+   }
+
+   .curtain {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    background: url('./assets/red\ curtains.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
 
    
    
@@ -390,6 +489,26 @@ background-color: #F5D13D;
    
     }
    
+   }
+
+   @keyframes glowing {
+    0% { opacity: 0.5; }
+    50% { opacity: 1; }
+    100% { opacity: 0.5; }
+   }
+
+   @keyframes glowingText {
+    0% {
+        text-shadow: 0 0 5px #F5D13D, 0 0 10px #F5D13D, 0 0 15px orange;
+    }
+
+    50% {
+        text-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px darkred;
+    }
+
+    100% {
+        text-shadow: 0 0 15px #F5D13D, 0 0 25px #F5D13D, 0 0 35px orange;
+    }
    }
 
 
