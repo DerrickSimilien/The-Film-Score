@@ -337,7 +337,9 @@ background-color: #F5D13D;
     color: #fff;
     text-shadow: 0 0 10px #F5D13D, 0 0 20px #F5D13D, 0 0 15px orange;
     animation: glowingText 1.5s infinite alternate;
-    margin-top: 40px;
+    /* margin-top: 40px; */
+    background: none;
+    margin-bottom: 10px;
    }
 
    /* .BrowseClickWatch {
@@ -369,7 +371,7 @@ background-color: #F5D13D;
    .InputWrapper__Browse {
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     flex-direction: row;
     /* display: inline-block; */
     /* position: absolute; */
@@ -432,6 +434,17 @@ background-color: #F5D13D;
     margin: 0;
     padding: 0;
     background-color: black;
+   }
+
+   .BrowseInputContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 150px;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
    }
 
    #SearchResults {
