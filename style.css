@@ -369,6 +369,8 @@ background-color: #F5D13D;
    .InputWrapper__Browse {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: row;
     /* display: inline-block; */
     /* position: absolute; */
     /* top: 50%; */
