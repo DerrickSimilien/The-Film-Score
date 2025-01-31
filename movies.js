@@ -9,7 +9,7 @@ async function Searchmovie() {
     console.log(results)
 }
 
-Searchmovie()
+
 function getMovies(movies) {
     return `
     <div >
