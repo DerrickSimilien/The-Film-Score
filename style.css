@@ -368,7 +368,8 @@ vertical-align: -0.125em;
     font-size: 16px;
     width: 100%;
     max-width: none;
-
+    color: #F5D13D;
+    font-style: italic;
    }
 
    .SearchButton {
@@ -382,7 +383,7 @@ vertical-align: -0.125em;
 
    .SearchButton i {
     font-size: 18px;
-    color: white;
+    color: #F5D13D;
    }
 
    /* .search-bar {
@@ -477,6 +478,7 @@ vertical-align: -0.125em;
     align-items: center;
     justify-content: center;
     text-align: center;
+    /* margin-top: 20px; */
     min-height: 100vh;
     padding: 20px;
     /* position: relative;
@@ -522,8 +524,48 @@ vertical-align: -0.125em;
    .MovieTitle {
     color: white;
    }
+
+   #SearchResults {
+    padding: 20px;
+    color: white;
+   }
+
+   .SearchResultsTitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+   }
+
+   .FilterContainer {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+   }
    
+   .PriceFilter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #F5D13D;
+   }
    
+   #priceRange {
+    width: 200px;
+   }
+
+ .MovieCard {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+}
+
+
    
    /* Define the keyframe animation */
    
