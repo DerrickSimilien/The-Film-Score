@@ -399,7 +399,7 @@ vertical-align: -0.125em;
     justify-content: center;
     flex-direction: row;
     margin-top: 40px;
-    gap: 5px;
+    gap: 10px;
     position: relative;
     width: 100%;
     transform: translate(-50%, -50%);
@@ -410,7 +410,6 @@ vertical-align: -0.125em;
     /* align-items: center; */
     /* flex-direction: row; */
     /* display: inline-block; */
-    /* position: absolute; */
     /* top: 50%; */
     /* left: 50%; */
     /* transform: translate(-50%, -50%);
