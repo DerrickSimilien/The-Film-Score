@@ -401,7 +401,8 @@ vertical-align: -0.125em;
     margin-top: 40px;
     gap: 10px;
     position: relative;
-    width: 100%;
+    width: 40%;
+    max-width: 600px;
     transform: translate(-50%, -50%);
     /* background: white; */
     /* border-radius: 5px; */
