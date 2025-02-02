@@ -290,7 +290,7 @@ display: inline-block;
 font-size: inherit;
 height: 1em;
 vertical-align: -0.125em;
-background-color: #F5D13D;
+/* background-color: #F5D13D; */
 }
 
 .FilmRoll {
@@ -349,15 +349,40 @@ background-color: #F5D13D;
    } */
 
    .BrowseMovieInput {
-    color: #F5D13D;
+    /* color: #F5D13D;
     width: 100%;
     max-width: 1200px;
     height: 60px;
     font-size: 20px;
     padding-left: 20px;
     background-color: #fff;
+    border-radius: 40px; */
+    padding-left: 20px;
     border-radius: 40px;
-   
+    border: 5px solid red !important;
+    flex: 1;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    outline: 5px solid black;
+    font-size: 16px;
+    width: 100%;
+    max-width: none;
+
+   }
+
+   .SearchButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    right: 10px;
+   }
+
+   .SearchButton i {
+    font-size: 18px;
+    color: white;
    }
 
    /* .search-bar {
@@ -370,17 +395,28 @@ background-color: #F5D13D;
 
    .InputWrapper__Browse {
     display: flex;
+    align-items: center;
     justify-content: center;
-    /* align-items: center; */
     flex-direction: row;
+    margin-top: 40px;
+    gap: 5px;
+    position: relative;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    /* background: white; */
+    /* border-radius: 5px; */
+    padding: 5px;
+    /* border: 1px solid #ccc; */
+    /* align-items: center; */
+    /* flex-direction: row; */
     /* display: inline-block; */
     /* position: absolute; */
     /* top: 50%; */
     /* left: 50%; */
-    transform: translate(-50%, -50%);
-    max-width: 600px;
-    width: 100%;
-    margin-top: 40px;
+    /* transform: translate(-50%, -50%);
+    /* max-width: 600px;
+    width: 100%; */
+    /* margin-top: 40px; */ 
    }
 
    .InputWrapper__Browse i {
@@ -389,16 +425,16 @@ background-color: #F5D13D;
     top: 50%;
     transform: translateY(-50%);
     font-size: 20px;
-    color: #777;
+    color: #ccc;
     cursor: pointer;
-    background-color: #fff;
+    /* background-color: #fff; */
    }
 
    .InputWrapper__Browse input {
     padding: 10px 40px 10px 15px;
     border: 1px solid #ccc;
     font-size: 20px;
-    width: 100%;
+    /* width: 700px; */
     border-radius: 40px;
     /* align-items: center;
     display: flex; */
@@ -440,11 +476,12 @@ background-color: #F5D13D;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    margin-top: 150px;
-    flex-direction: column;
     text-align: center;
-    gap: 10px;
+    height: 100vh;
+    /* position: relative;
+    margin-top: 150px; */
+    flex-direction: column;
+    /* gap: 10px; */
    }
 
    #SearchResults {
