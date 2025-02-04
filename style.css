@@ -495,6 +495,7 @@ vertical-align: -0.125em;
     /* padding: 40px 20px; */
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
    }
  
    
@@ -511,6 +512,11 @@ vertical-align: -0.125em;
 
    .Filter {
     padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
    }
 
    .curtain {
@@ -531,13 +537,30 @@ vertical-align: -0.125em;
    #SearchResults {
     padding: 20px;
     color: white;
-    margin-top: 5px;
+    margin-top: 20px;
+    /* background-color: #f8f8f8; */
    }
 
    .SearchResultsTitle {
     font-size: 30px;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    color: #F5D13D;
+   }
+
+   .LoadingWrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+   }
+
+   .LoadingState {
+    margin: 80px 0;
+    width: 100%;
+    justify-content: center !important;
+
    }
 
    .FilterContainer {

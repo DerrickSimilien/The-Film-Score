@@ -21,11 +21,11 @@
     <section id="LandingPage">
         <nav class="NavBar">
             <div class="Logo">
-                <img src="./assets/Black film score.png" alt="Logo" class="Logo">
+                <img src="./assets/Black film score.png" alt="" class="Logo">
             </div>
             <div class="NavBar__Links">
                 <a href="./index.html" class="Home-Active">Home</a>
-                <a href="" class="SearchYourFilm">Search for movie</a>
+                <a href="#SearchResults" class="SearchYourFilm">Search for movie</a>
                 <button class="ContactButton">Contact</button>
             </div>
             <button class="Menu">
@@ -42,14 +42,11 @@
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
             </div>
-        <!-- <div class="BrowseContainer">
-        </div> -->
-        <!-- <div class="InputWrapper__Browse">
-            <input class="BrowseMovieInput" type="text" placeholder="Search by Title, Year, Genre">
-            <button onclick="Searchmovie()">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-        </div> -->
+        </div>
+        <div class="LoadingWrapper">
+            <div class="LoadingState">
+                <i class="fa-thin fa-spinner"></i>
+            </div>
         </div>
         </section>
         </div>
@@ -57,7 +54,8 @@
             <h2 class="SearchResultsTitle">Search results: </h2>
             <div class="FilterContainer">
                 <div class="PriceFilter">
-                    <label for="priceRange"></label>
+                    <label for="priceRange">Price Range:</label>
+                    <input type="range" id="priceRange" min="0" max="1000" step="50">
                     <span id="priceValue">$0 to $1000</span>
                 </div>
             </div>
