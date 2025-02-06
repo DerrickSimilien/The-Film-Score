@@ -531,8 +531,8 @@ vertical-align: -0.125em;
    }
 
    .MovieTitle {
-    color: white;
-    display: none;
+    color: #f5f33d;
+    /* display: none; */
    }
 
    #SearchResults {
