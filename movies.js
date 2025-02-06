@@ -55,48 +55,6 @@ document.getElementById("searchButton").addEventListener("click", function () {
 //     });
 // });
 
-
-document.querySelector('#searchButton').addEventListener('click', function() {
-    const searchQuery = document.querySelector('#searchInput').value.trim(); // The search query input
-    const results = document.querySelector('.results'); // Assuming you display your movie results here
-    
-    // Get the movie info elements
-    const movieTitle = document.querySelector('.MovieTitle:nth-of-type(1)');
-    const movieYear = document.querySelector('.MovieTitle:nth-of-type(2)');
-    const movieType = document.querySelector('.MovieTitle:nth-of-type(3)');
-  
-    // Clear previous content
-    movieTitle.classList.add('hidden');
-    movieYear.classList.add('hidden');
-    movieType.classList.add('hidden');
-    
-    if (searchQuery) {
-      // Placeholder: Simulate fetching movie details (replace this with your actual logic)
-      let movie = {
-        title: "Sample Movie",  // Example data
-        year: "2025",           // Example data
-        type: "Action"          // Example data
-      };
-  
-      if (movie) {
-        // Update the content dynamically
-        document.getElementById('movieTitle').textContent = movie.title;
-        document.getElementById('movieYear').textContent = movie.year;
-        document.getElementById('movieType').textContent = movie.type;
-  
-        // Show the movie info
-        movieTitle.classList.remove('hidden');
-        movieYear.classList.remove('hidden');
-        movieType.classList.remove('hidden');
-      } else {
-        // Handle no results found (if needed)
-        alert("No movie found for your search.");
-      }
-    } else {
-      // If no search query is entered, do nothing or show a default message
-      alert("Please enter a search query.");
-    }
-  });
   
 
 
