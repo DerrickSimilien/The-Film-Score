@@ -478,11 +478,11 @@ vertical-align: -0.125em;
    .BrowseInputContainer {
     display: flex;
     align-items: center;
-    margin-top: 5px;
+    margin-top: 150px;
     justify-content: center;
     text-align: center;
     /* margin-top: 20px; */
-    min-height: 100vh;
+    /* min-height: 100vh; */
     padding: 20px;
     /* position: relative;
     margin-top: 150px; */
