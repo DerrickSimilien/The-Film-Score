@@ -46,3 +46,13 @@ document.getElementById("searchButton").addEventListener("click", function () {
         movieType.classList.remove("hidden");
     }
 });
+
+document.getElementById("searchButton").addEventListener("click", function () {
+    let movieElements = document.querySelectorAll(".MovieTitle"); // Select all elements with the class
+
+    movieElements.forEach(element => {
+        element.style.display = "block"; // Make them visible
+    });
+});
+
+

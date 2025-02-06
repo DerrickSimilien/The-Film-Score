@@ -532,6 +532,7 @@ vertical-align: -0.125em;
 
    .MovieTitle {
     color: white;
+    display: none;
    }
 
    #SearchResults {
@@ -594,6 +595,7 @@ vertical-align: -0.125em;
 
 .hidden {
     display: none;
+    visibility: hidden;
 }
 
 
