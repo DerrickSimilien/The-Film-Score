@@ -36,8 +36,8 @@ document.getElementById("searchButton").addEventListener("click", function () {
     let movieYear = document.getElementById("movieYear");
     let movieType = document.getElementById("movieType");
 
-    // Simulating API Call (replace with actual fetch call)
-    let movieFound = true; // Change this condition based on search results
+    
+    let movieFound = true; 
 
     if (movieFound) {
         filmRoll.classList.remove("hidden");
@@ -48,11 +48,13 @@ document.getElementById("searchButton").addEventListener("click", function () {
 });
 
 // document.getElementById("searchButton").addEventListener("click", function () {
-//     let movieElements = document.querySelectorAll(".MovieTitle"); // Select all elements with the class
+//     let movieElements = document.querySelectorAll(".MovieTitle"); // 
 
 //     movieElements.forEach(element => {
-//         element.style.display = "block"; // Make them visible
+//         element.style.display = "block"; // 
 //     });
 // });
+
+
 
 
