@@ -592,6 +592,11 @@ vertical-align: -0.125em;
     width: 200px;
 }
 
+.hidden {
+    display: none;
+}
+
+
 
    
    /* Define the keyframe animation */

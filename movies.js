@@ -29,3 +29,20 @@ function getMovies(movies) {
     `
 
 }
+
+document.getElementById("searchButton").addEventListener("click", function () {
+    let filmRoll = document.getElementById("filmRoll");
+    let movieTitle = document.getElementById("movieTitle");
+    let movieYear = document.getElementById("movieYear");
+    let movieType = document.getElementById("movieType");
+
+    // Simulating API Call (replace with actual fetch call)
+    let movieFound = true; // Change this condition based on search results
+
+    if (movieFound) {
+        filmRoll.classList.remove("hidden");
+        movieTitle.classList.remove("hidden");
+        movieYear.classList.remove("hidden");
+        movieType.classList.remove("hidden");
+    }
+});
