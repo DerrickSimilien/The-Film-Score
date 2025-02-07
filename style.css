@@ -261,6 +261,15 @@ width: 170px;
     padding-left: 25px;
 }
 
+.FilmRoll {
+    font-size: 80px;
+    color: #fff;
+    border-radius: 500px;
+    transition: all .25s ease;
+    margin: 0px 0px 0px 20px;
+    padding: 10px 30px;
+}
+
 .Loading {
     font-size: 40px;
     color: #fff;
@@ -561,7 +570,7 @@ vertical-align: -0.125em;
     margin: 80px 0;
     width: 100%;
     justify-content: center !important;
-
+    visibility: hidden;
    }
 
    .FilterContainer {
@@ -594,8 +603,7 @@ vertical-align: -0.125em;
 }
 
 .hidden {
-    display: none;
-    visibility: hidden;
+    visibility: visible;
 }
 
 
