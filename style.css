@@ -270,18 +270,28 @@ width: 170px;
     padding: 10px 30px;
 }
 
+/* .FilmRollButton {
+
+} */
+
 .Loading {
     font-size: 40px;
     color: #fff;
-    border-radius: 20px;
+    border-radius: 40px;
     transition: all .25s ease;
-    margin: 0px 0px 0px 20px;
+    margin: 0px 0px 0px 80px;
     padding: 10px 30px;
+    width: 700px;
+    height: 60px;
 }
 
 .Loading:hover {
-    background-color: #F5D13D;
+    background-color: yellow;
     cursor: pointer;
+}
+
+.StreamNow:hover {
+    background-color: none;
 }
 
 
@@ -301,6 +311,15 @@ height: 1em;
 vertical-align: -0.125em;
 /* background-color: #F5D13D; */
 }
+
+.StreamNow {
+    color: white;
+    text-decoration: none;
+    /* background-color: #F5D13D; */
+    font-style: italic;
+}
+
+.StreamNow
 
 .FilmRoll {
     margin-top: 30px;
