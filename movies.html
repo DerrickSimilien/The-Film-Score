@@ -48,13 +48,16 @@
           </div> -->
         <section id="SearchResults">
             <h2 class="SearchResultsTitle">Search results: </h2>
-            <div class="FilterContainer">
-                <div class="PriceFilter">
-                    <label for="priceRange">Year of Cinema:</label>
-                    <input type="range" id="priceRange" min="0" max="1000" step="50">
-                    <span id="priceValue">1920 to 2024</span>
-                </div>
-            </div>
+            <div class="filter__selector">
+                <h4 class="filter__title">Filter 
+                    <i class="fa-solid fa-sort" style="color: #e3b202;"></i>
+                </h4>
+                <select id="filter" onchange="filterMovies(event)">
+                    <option value="" disabled selected>Sort</option>
+                    <option value="NEW_TO_OLD">New to Old</option>
+                    <option value="OLD_TO_NEW">Old to New</option>
+                </select>
+                    </div>
            <div class="Filter">
             <div class="MovieCard" >
                 <div class="LoadingState">

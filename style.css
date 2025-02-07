@@ -628,6 +628,30 @@ vertical-align: -0.125em;
     visibility: visible;
 }
 
+.filter__selector {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    font-size: 24px;
+}
+
+#filter {
+    width: 100%;
+    max-width: 200px;
+    margin-top: 8px;
+    font-size: 24px;
+    color: rgb(12, 12, 12);
+    background-color: rgb(240, 187, 51);
+    font-weight: 500;
+    border-radius: 20px;
+    border: 2px solid gray;
+}
+
+option {
+    background-color: rgb(240, 187, 51);
+}
+
 
 
    

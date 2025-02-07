@@ -2,7 +2,7 @@
 const element = document.querySelector(".Filter");
 const loadingState = document.querySelector(".LoadingState"); // Get the loading element
 
-async function Searchmovie() {
+async function Searchmovie(Love) {
     const MovieTitle = document.querySelector(".BrowseMovieInput").value;
 
     // Show loading state
@@ -11,6 +11,13 @@ async function Searchmovie() {
     try {
         const response = await fetch(`https://www.omdbapi.com/?apikey=b89bd989&s=${MovieTitle || ""}`);
         const moviedata = await response.json();
+        if(Love === "NEW_TO_OLD") {
+            moviedata.Search.sort((a, b) => b.Year - a.Year)
+        }
+        if(Love === "OLD_TO_NEW") {
+            moviedata.Search.sort((a, b) => a.Year - b.Year)
+        }
+        
 
         // Add a delay before displaying the results
         setTimeout(() => {
@@ -29,6 +36,10 @@ async function Searchmovie() {
     }
 }
 
+function filterMovies(event) {
+    Searchmovie(event.target.value)  
+}
+
 function getMovies(movies) {
     return `
         <div>
@@ -43,6 +54,8 @@ function getMovies(movies) {
 }
 
 document.querySelector(".SearchButton").addEventListener("click", Searchmovie);
+
+
 
   
 
