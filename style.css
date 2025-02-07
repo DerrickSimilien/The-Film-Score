@@ -317,6 +317,9 @@ vertical-align: -0.125em;
     text-decoration: none;
     /* background-color: #F5D13D; */
     font-style: italic;
+    background-color: transparent; /* Remove background */
+    border: none; /* Optional: removes any border if applied */
+    color: inherit;
 }
 
 .StreamNow
@@ -614,7 +617,7 @@ vertical-align: -0.125em;
    }
 
  .MovieCard {
-    background: rgba(255, 255, 255, 0.1);
+    /* background: rgba(255, 255, 255, 0.1); */
     padding: 15px;
     border-radius: 10px;
     text-align: center;
