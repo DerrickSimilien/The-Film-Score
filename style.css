@@ -176,6 +176,7 @@ width: 170px;
     justify-content: space-around;
     width: 40%;
     background: none;
+    /* display: none; */
 }
 
 .NavBar__Links a {
@@ -194,9 +195,18 @@ width: 170px;
     transform: scale(1.1);
 }
 
+
+
 .Menu {
-    display: none;
+    /* display: none; */
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
 }
+
+
 
 .FirstContainer {
     /* z-index: 10px;
@@ -700,8 +710,30 @@ option {
 
 
 @media screen and (max-width: 600px) {
-    
+    .NavBar__Links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        padding: 10px 0;
+         /* Initially hidden */
+    }
+
+    .NavBar__Links a {
+        color: white;
+        padding: 10px;
+    }
+
+    .NavBar__Links.show {
+        display: flex; /* Show the links when the menu is clicked */
+    }
 }
+
 
 
 
