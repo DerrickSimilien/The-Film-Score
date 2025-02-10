@@ -58,14 +58,22 @@ document.querySelector(".SearchButton").addEventListener("click", Searchmovie);
 
 
  // Burger menu javascript
-document.addEventListener("DOMContentLoaded", function () {
-    const burgerMenu = document.getElementById("burgerMenu");
-    const mobileNav = document.getElementById("mobileNav");
+ document.addEventListener("DOMContentLoaded", function () {
+    const menuButton = document.querySelector(".Menu");
+    const navLinks = document.querySelector(".NavBar__Links");
 
-    burgerMenu.addEventListener("click", function () {
-        mobileNav.style.display = mobileNav.style.display === "flex" ? "none" : "flex";
+    menuButton.addEventListener("click", function () {
+        navLinks.classList.toggle("open"); // Toggle the menu on click
+    });
+
+    // Close menu when clicking outside of it
+    document.addEventListener("click", function (event) {
+        if (!navLinks.contains(event.target) && !menuButton.contains(event.target)) {
+            navLinks.classList.remove("open");
+        }
     });
 });
+
 
 
 

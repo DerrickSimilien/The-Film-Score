@@ -731,10 +731,6 @@ option {
         display: none;
     }
 
-    .Menu {
-        display: block; /* Show burger button */
-    }
-
     .Logo {
         width: 50%;
         height: 50%;
@@ -755,6 +751,27 @@ option {
 
     .BrowseMovieInput {
         width: 1500px;
+    }
+
+    .NavBar__Links.open {
+        display: flex; /* Show menu when active */
+    }
+
+    .NavBar__Links a, .NavBar__Links button {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        display: block;
+        width: 100%;
+    }
+
+    .Menu {
+        display: block; /* Show menu button */
+        background: none;
+        border: none;
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
     }
 }
 
