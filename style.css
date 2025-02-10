@@ -734,6 +734,28 @@ option {
     .Menu {
         display: block; /* Show burger button */
     }
+
+    .Logo {
+        width: 50%;
+        height: 50%;
+        /* display: none; */
+    }
+
+    .FirstHeader {
+        Font-size: 30px;
+    }
+
+    .Header2 {
+        Font-size: 30px;
+    }
+
+    .Loading {
+        width: 500px;
+    }
+
+    .BrowseMovieInput {
+        width: 1500px;
+    }
 }
 
 
