@@ -75,6 +75,17 @@ document.querySelector(".SearchButton").addEventListener("click", Searchmovie);
 });
 
 
+document.addEventListener("DOMContentLoaded", () => {
+    const burgerButton = document.getElementById("burgerButton");
+    const burgerMenu = document.getElementById("burgerMenu");
+
+    burgerButton.addEventListener("click", () => {
+        burgerMenu.classList.toggle("active");
+    });
+});
+
+
+
 
 
   
