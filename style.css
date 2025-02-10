@@ -728,7 +728,7 @@ option {
 
 @media screen and (max-width: 600px) {
     .NavBar__Links {
-        display: none;
+        display: none !important;
     }
 
     .Logo {
@@ -768,9 +768,9 @@ option {
     .Menu {
         display: block; /* Show menu button */
         background: none;
-        border: none;
+        /* border: none;
         color: white;
-        font-size: 18px;
+        font-size: 18px; */
         cursor: pointer;
     }
 
@@ -779,7 +779,7 @@ option {
         position: absolute;
         top: 60px; /* Adjust as needed */
         right: 10px;
-        background: #333;
+        background: #e9c40d;
         color: white;
         width: 150px;
         border-radius: 5px;
@@ -799,11 +799,16 @@ option {
     }
 
     .burger-menu a:hover, .burger-menu button:hover {
-        background: #555;
+        background: yellow;
+        border-radius: 999px;
     }
 
     .burger-menu.active {
         display: block;
+    }
+
+    .burger-menu.show {
+        display: block; /* Show the burger menu when clicked */
     }
 }
 
