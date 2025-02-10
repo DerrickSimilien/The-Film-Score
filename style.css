@@ -818,13 +818,9 @@ option {
     }
 
     .BrowseMovieInput {
-        padding-left: 30px; /* Adds space for the magnifying glass icon */
-        padding-right: 30px; /* Gives space on the right side */
-        width: 100%;
-        height: 70px;
-        border-radius: 20px;
-        border: 1px solid #ccc;
-        font-size: 16px;
+        width: 130%; /* Adjust width to 90% of the available space for a bit wider input */
+        max-width: none; /* Remove the maximum width constraint */
+        padding-left: 15px;
     }
 
     .SearchButton {
