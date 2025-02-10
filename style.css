@@ -198,12 +198,29 @@ width: 170px;
 
 
 .Menu {
-    /* display: none; */
+    display: none;
     background: none;
     border: none;
     font-size: 24px;
     color: white;
     cursor: pointer;
+}
+
+.MobileNav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.MobileNav a, .MobileNav button {
+    display: block;
+    padding: 10px;
+    text-align: center;
 }
 
 
@@ -711,26 +728,11 @@ option {
 
 @media screen and (max-width: 600px) {
     .NavBar__Links {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        position: absolute;
-        top: 50px;
-        left: 0;
-        width: 100%;
-        background-color: #333;
-        padding: 10px 0;
-         /* Initially hidden */
+        display: none;
     }
 
-    .NavBar__Links a {
-        color: white;
-        padding: 10px;
-    }
-
-    .NavBar__Links.show {
-        display: flex; /* Show the links when the menu is clicked */
+    .Menu {
+        display: block; /* Show burger button */
     }
 }
 
@@ -740,7 +742,7 @@ option {
 
 
 
-@media (max-width: 750px) {
+/* @media (max-width: 750px) {
     .Menu {
         display: flex;
     }
@@ -750,5 +752,5 @@ option {
     }
 
 }
-
+ */
 

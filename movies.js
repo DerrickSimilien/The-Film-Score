@@ -57,6 +57,18 @@ document.querySelector(".SearchButton").addEventListener("click", Searchmovie);
 
 
 
+ // Burger menu javascript
+document.addEventListener("DOMContentLoaded", function () {
+    const burgerMenu = document.getElementById("burgerMenu");
+    const mobileNav = document.getElementById("mobileNav");
+
+    burgerMenu.addEventListener("click", function () {
+        mobileNav.style.display = mobileNav.style.display === "flex" ? "none" : "flex";
+    });
+});
+
+
+
   
 
 
