@@ -138,6 +138,10 @@ flex: 1;
 .Logo {
 height: 160px;
 width: 170px;
+/* max-width: 100%; 
+    height: auto;
+    display: block;
+    margin: 0 auto; */
 }
 
 .Logo img {
