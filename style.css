@@ -313,7 +313,7 @@ width: 170px;
 }
 
 .Loading:hover {
-    background-color: yellow;
+    background-color: rgb(198, 22, 22);
     cursor: pointer;
 }
 
@@ -681,6 +681,8 @@ option {
 
 
 
+
+
    
    /* Define the keyframe animation */
    
@@ -728,7 +730,17 @@ option {
 
 @media screen and (max-width: 600px) {
     .NavBar__Links {
-        display: none !important;
+        /* display: none !important; */
+        position: absolute;
+        top: 0;
+        right: -100%; /* Hide off-screen */
+        width: 250px;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.9);
+        flex-direction: column;
+        align-items: center;
+        padding-top: 60px;
+        transition: transform 0.4s ease-in-out;
     }
 
     .Logo {
@@ -754,7 +766,8 @@ option {
     }
 
     .NavBar__Links.open {
-        display: flex; /* Show menu when active */
+        /* display: flex;  */
+        transform: translateX(-100%);
     }
 
     .NavBar__Links a, .NavBar__Links button {
@@ -834,6 +847,16 @@ option {
     .SearchButton i {
         font-size: 18px;
         color: #333; /* You can adjust this color */
+    }
+
+    #burgerButton {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        z-index: 1000;
     }
 }
 
