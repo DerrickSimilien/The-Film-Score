@@ -800,6 +800,12 @@ option {
         transition: transform 0.4s ease-in-out;
     }
 
+    .NavBar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     .Logo {
         width: 50%;
         height: 50%;
@@ -829,7 +835,7 @@ option {
     }
 
     .Loading:hover {
-        box-shadow: 0 0 15px 5px rgba(255, 99, 71, 0.8); /* Glowing red effect */
+        box-shadow: 0 0 15px 15px rgba(255, 99, 71, 0.8); /* Glowing red effect */
         transform: scale(1.1); /* Slightly scale up the button */
     }
 
