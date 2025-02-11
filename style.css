@@ -204,6 +204,12 @@ width: 170px;
     font-size: 24px;
     color: white;
     cursor: pointer;
+    z-index: 2000;
+}
+
+.burger-menu.open ~ #burgerButton i {
+    transform: rotate(90deg); /* Rotate the icon to look like a cross */
+    transition: transform 0.3s ease-in-out;
 }
 
 .MobileNav {
@@ -315,6 +321,9 @@ width: 170px;
 .Loading:hover {
     background-color: rgb(198, 22, 22);
     cursor: pointer;
+    box-shadow: 0 0 15px 5px rgba(255, 99, 71, 0.8); /* Glowing red effect */
+    transform: scale(1.1); /* Slightly scale up the button */
+
 }
 
 .StreamNow:hover {
@@ -679,6 +688,38 @@ option {
     background-color: rgb(240, 187, 51);
 }
 
+.burger-menu {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Initially hidden off-screen to the left */
+    width: 250px; /* Width of the menu */
+    height: 100%; /* Full screen height */
+    background-color: #333; /* Dark background */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out; /* Smooth sliding transition */
+    z-index: -1; /* Initially behind other content */
+}
+
+.burger-menu.open {
+    transform: translateX(250px); /* Move the menu to the right */
+    z-index: 1000; /* Bring the menu above other content */
+}
+
+.burger-menu a, .burger-menu button {
+    color: white;
+    text-decoration: none;
+    margin: 15px 0;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
 
 
 
@@ -711,6 +752,22 @@ option {
     50% { opacity: 1; }
     100% { opacity: 0.5; }
    }
+
+   @keyframes burgerAnimation {
+    0% {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(45deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+#burgerButton {
+    animation: burgerAnimation 0.5s ease-in-out;
+}
 
    @keyframes glowingText {
     0% {
@@ -753,12 +810,27 @@ option {
         Font-size: 30px;
     }
 
+    .FirstContainer {
+        justify-content: flex-start;
+        padding-top: 20px;
+    }
+
+
+
     .Header2 {
         Font-size: 30px;
     }
 
     .Loading {
-        width: 500px;
+        /* width: 500px; */
+        width: 150%; /* Button will take 80% of the container width */
+        font-size: 25px; /* Make font size bigger on smaller screens */
+        padding: 20px;
+    }
+
+    .Loading:hover {
+        box-shadow: 0 0 15px 5px rgba(255, 99, 71, 0.8); /* Glowing red effect */
+        transform: scale(1.1); /* Slightly scale up the button */
     }
 
     .BrowseMovieInput {
@@ -834,6 +906,13 @@ option {
         width: 130%; /* Adjust width to 90% of the available space for a bit wider input */
         max-width: none; /* Remove the maximum width constraint */
         padding-left: 15px;
+    }
+
+    .input-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 
     .SearchButton {

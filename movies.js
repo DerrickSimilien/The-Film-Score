@@ -95,6 +95,11 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+document.getElementById("burgerButton").addEventListener("click", function() {
+    const burgerMenu = document.getElementById("burgerMenu");
+    burgerMenu.classList.toggle("open"); // Toggle the 'open' class to show/hide the menu
+});
+
 
 
 
