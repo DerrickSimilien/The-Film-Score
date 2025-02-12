@@ -174,6 +174,10 @@ width: 170px;
     border-color: gold;
 }
 
+body, html {
+    overflow-x: hidden;
+}
+
 .NavBar__Links {
     display: flex;
     align-items: center;
@@ -869,12 +873,17 @@ option {
     }
 
     .Menu {
-        display: block; /* Show menu button */
-        background: none;
+        /* display: block;  */
+        /* background: none; */
         /* border: none;
         color: white;
         font-size: 18px; */
-        cursor: pointer;
+        /* cursor: pointer; */
+        right: -250px;
+    }
+
+    .menu.open {
+        left: 0;
     }
 
     .burger-menu {
