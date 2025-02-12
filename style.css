@@ -307,9 +307,7 @@ width: 170px;
     padding: 10px 30px;
 }
 
-/* .FilmRollButton {
 
-} */
 
 .Loading {
     font-size: 40px;
@@ -957,9 +955,27 @@ option {
 
 @media screen and (max-width: 768px) {
 
-    .NavBar a {
+    /* .NavBar a {
         padding: 0 10px;
-    }
+    } */
    
+    .NavBar {
+        display: flex;
+        gap: 20px;
+    }
 
+    .NavBar__Links {
+        align-items: center;
+        width: 80%;
+    }
+
+    .Loading {
+        width: 500px;
+        /* align-items: center; */
+    }
+
+    .input-wrapper {
+        width: 90%;
+    }
+    
 }
