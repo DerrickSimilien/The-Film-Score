@@ -955,15 +955,11 @@ option {
 
 
 
-/* @media (max-width: 750px) {
-    .Menu {
-        display: flex;
-    }
+@media screen and (max-width: 768px) {
 
-    .NavBar__Links {
-        display: none;
+    .NavBar a {
+        padding: 0 10px;
     }
+   
 
 }
- */
-
