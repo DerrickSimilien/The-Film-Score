@@ -156,7 +156,7 @@ width: 170px;
     background-color: #F5D13D;
     /* color: white !important; */
     color: black;
-    font-size: 13px;
+    font-size: 20px;
     font-weight: 900px;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -180,6 +180,7 @@ width: 170px;
     justify-content: space-around;
     width: 40%;
     background: none;
+    /* padding: 5px 30px; */
     /* display: none; */
 }
 
@@ -360,7 +361,7 @@ vertical-align: -0.125em;
     color: inherit;
 }
 
-.StreamNow
+
 
 .FilmRoll {
     margin-top: 30px;
@@ -368,10 +369,12 @@ vertical-align: -0.125em;
 
 .Home-Active {
     color:#F5D13D;
+    font-size: 20px;
 }
 
 .SearchYourFilm {
     color: #F5D13D;
+    font-size: 20px;
 }
 
 .FirstContainer {
@@ -786,6 +789,8 @@ option {
    }
 
 
+/* MEDIA QUIERIES  */
+
 
 @media screen and (max-width: 600px) {
     .NavBar__Links {
@@ -826,12 +831,12 @@ option {
 
 
     .Header2 {
-        Font-size: 30px;
+        Font-size: 25px;
     }
 
     .Loading {
         /* width: 500px; */
-        width: 150%; /* Button will take 80% of the container width */
+        width: 300px; /* Button will take 80% of the container width */
         font-size: 25px; /* Make font size bigger on smaller screens */
         padding: 20px;
     }
@@ -856,6 +861,11 @@ option {
         padding: 10px;
         display: block;
         width: 100%;
+    }
+
+    .StreamNow {
+        font-size: 30px;
+        letter-spacing: 3px;
     }
 
     .Menu {
@@ -978,4 +988,13 @@ option {
         width: 90%;
     }
     
+}
+
+@media screen and (max-width: 1024px) {
+
+    .NavBar__Links a {
+        padding: 5px 30px;
+        /* font-weight: 600; */
+    }
+
 }
