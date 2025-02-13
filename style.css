@@ -921,8 +921,9 @@ option {
     }
 
     .burger-menu a:hover, .burger-menu button:hover {
-        background: yellow;
+        /* background: yellow; */
         border-radius: 999px;
+        transform: scale(1.1);
     }
 
     .burger-menu.active {

@@ -3,7 +3,7 @@ const element = document.querySelector(".Filter");
 const loadingState = document.querySelector(".LoadingState"); // Get the loading element
 
 async function Searchmovie(Love) {
-    const MovieTitle = document.querySelector(".BrowseMovieInput").value;
+    const MovieTitle = document.querySelector(".BrowseMovieInput").value; // The Value is what movie the user is searching in the input box
 
     // Show loading state
     loadingState.classList.add("hidden"); // Make sure it's visible before fetching
