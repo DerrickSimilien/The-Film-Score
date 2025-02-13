@@ -826,6 +826,7 @@ option {
 
     .FirstHeader {
         Font-size: 30px;
+        color: #e71111;
     }
 
     .FirstContainer {
@@ -833,6 +834,9 @@ option {
         padding-top: 20px;
     }
 
+    .InputWrapper__Browse input {
+        width: 700px;
+    }
 
 
     .Header2 {
@@ -993,6 +997,10 @@ option {
         width: 80%;
     }
 
+    .NavBar__Links a {
+        color: #F5D13D;
+    }
+
     .Loading {
         width: 500px;
         /* align-items: center; */
@@ -1000,6 +1008,10 @@ option {
 
     .input-wrapper {
         width: 90%;
+    }
+
+    .FirstHeader {
+        color: #e71111;
     }
     
 }
