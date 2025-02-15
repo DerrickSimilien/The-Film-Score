@@ -204,7 +204,9 @@ body, html {
     transform: scale(1.1);
 }
 
-
+.ContactButton {
+    box-shadow: 0 0 15px 5px rgba(255, 255, 0, 0.8); 
+}
 
 .Menu {
     display: none;
