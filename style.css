@@ -166,13 +166,13 @@ width: 170px;
     font-weight: bold;
 }
 
-.ContactButton:hover {
+/* .ContactButton:hover {
     color: white;
     background-color: black;
     box-shadow: 0 0 10px yellow, 0 0 20px gold, 0 0 30px orange;
     text-shadow: 0 0 10px yellow, 0 0 20px gold;
     border-color: gold;
-}
+} */
 
 body, html {
     overflow-x: hidden;
@@ -501,7 +501,7 @@ vertical-align: -0.125em;
    .InputWrapper__Browse i {
     position: absolute;
     right: 15px;
-    top: 50%;
+    top: -15%;
     transform: translateY(-50%);
     font-size: 20px;
     color: #ccc;
@@ -797,7 +797,7 @@ option {
 /* MEDIA QUIERIES  */
 
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
     .NavBar__Links {
         /* display: none !important; */
         position: absolute;
@@ -819,8 +819,8 @@ option {
     }
 
     .Logo {
-        width: 50%;
-        height: 50%;
+        /* width: 50%; */
+        /* height: 45%; */
         /* display: none; */
     }
 
@@ -836,6 +836,10 @@ option {
 
     .InputWrapper__Browse input {
         width: 700px;
+    }
+
+    .InputWrapper__Browse i {
+        right: -35px;
     }
 
 
